@@ -1,3 +1,5 @@
+![alt text](https://github.com/hychim/UU_GenomeAnalysis/durian.png)
+
 # UU_GenomeAnalysis
 ## Introduction
 Project for the course Genome Analysis at Uppsala University.
