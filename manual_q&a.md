@@ -1,10 +1,17 @@
 # Introduction seminar(Guiding discussion questions)
 ## Project Planning questions
 **What softwares would you use?**
+- answer
+ 
 **In what order?**
-**What is input and output data?**
-**What happens in each step?**
+- answer
 
+**What is input and output data?**
+- answer
+
+**What happens in each step?**
+- answer
+  
 ## General questions
 **Very briefly, what is the purpose of the study?**
 - answer
@@ -82,48 +89,54 @@
 
 # Practical information About Software
 ## Read quality control
-- What is the structure of a FASTQ file?
-- How is the quality of the data stored in the FASTQ files? How are paired reads
-identified?
-- How is the quality of your data?
-- What can generate the issues you observe in your data? Can these cause any
-problems during subsequent analyses?
+**What is the structure of a FASTQ file?**
+
+**How is the quality of the data stored in the FASTQ files? How are paired reads identified?**
+
+**How is the quality of your data?**
+
+**What can generate the issues you observe in your data? Can these cause any problems during subsequent analyses?**
 
 ## Reads preprocessing
-- How many reads have been discarded after trimming?
-- How can this affect your future analyses and results?
-- How is the quality of your data after trimming?
-- What do the LEADING, TRAILING and SLIDINGWINDOW options do?
+**How many reads have been discarded after trimming?**
+
+**How can this affect your future analyses and results?**
+
+**How is the quality of your data after trimming?**
+
+**What do the LEADING, TRAILING and SLIDINGWINDOW options do?**
 
 ## Genome and Metagenome Assembly
-- What information can you get from the plots and reports given by the assembler (if
-you get any)?
-- What intermediate steps generate informative output about the assembly?
-- How many contigs do you expect? How many do you obtain?
-- What is the difference between a ‘contig’ and a ‘unitig’?
-- What is the difference between a ‘contig’ and a ‘scaffold’?
-- What are the k-mers? What k-mer(s) should you use? What are the problems and
-benefits of choosing a small kmer? And a big k-mer?
-- Some assemblers can include a read-correction step before doing the assembly.
-What is this step doing?
-- How different do different assemblers perform for the same data?
+**What information can you get from the plots and reports given by the assembler (if you get any)?**
+
+**What intermediate steps generate informative output about the assembly?**
+
+**How many contigs do you expect? How many do you obtain?**
+
+**What is the difference between a ‘contig’ and a ‘unitig’?**
+
+
+**What is the difference between a ‘contig’ and a ‘scaffold’? What are the k-mers? What k-mer(s) should you use? What are the problems and benefits of choosing a small kmer? And a big k-mer?**
+
+**Some assemblers can include a read-correction step before doing the assembly. What is this step doing?**
+
+**How different do different assemblers perform for the same data?**
 
 ## Assembly evaluation
-- What do measures like N50, N90, etc. mean? How can they help you evaluate the
-quality of your assembly? Which measure is the best to summarize the quality of
-the assembly (N50, number of ORFs, completeness, total size, longest contig ...)
-- How does your assembly compare with the reference assembly? What can have
-caused the differences?
-- Why do you think your assembly is better/worse than the public one?
-- When running metaQuast for a metagenome, it may happen that very few contigs
-map back to the reference genomes. Is this expected? Does that mean your assembly is bad? Why?
+**What do measures like N50, N90, etc. mean? How can they help you evaluate the quality of your assembly? Which measure is the best to summarize the quality of the assembly (N50, number of ORFs, completeness, total size, longest contig ...)**
+
+
+**How does your assembly compare with the reference assembly? What can have caused the differences?**
+**Why do you think your assembly is better/worse than the public one?**
+
+**When running metaQuast for a metagenome, it may happen that very few contigs map back to the reference genomes. Is this expected? Does that mean your assembly is bad? Why?**
 
 ## Binning
-- Metabat uses information about the contig coverage and tetranucleotide frequency
-to classify contigs into bins. What are they? Why are they suitable features to use?
-- Check how many contigs you have in your metagenome assembly. And look at
-how many contigs are in your bins.
-- Do the numbers add up? Is this expected? What does it mean?
+**Metabat uses information about the contig coverage and tetranucleotide frequency to classify contigs into bins. What are they? Why are they suitable features to use?**
+
+**Check how many contigs you have in your metagenome assembly. And look at how many contigs are in your bins.**
+
+**Do the numbers add up? Is this expected? What does it mean?**
 
 ## Binning evaluation
 **How does CheckM estimate completeness of your genomes? And the contamination values? Do you think this reflects the actual completeness and contamination of your genomes?**
