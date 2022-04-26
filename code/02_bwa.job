@@ -14,5 +14,5 @@ module load bwa/0.7.17
 bwa index /home/hychim/private/UU_GenomeAnalysis/result/genome_assembly/canu/2022_03_29_scaffold11_canu.contigs.fasta
 
 bwa mem /home/hychim/private/UU_GenomeAnalysis/result/genome_assembly/canu/2022_03_29_scaffold11_canu.contigs.fasta \
-/home/hychim/private/UU_GenomeAnalysis/data/raw_data/illumina_data/SRR6058604_scaffold_06.1P.fastq.gz \
-/home/hychim/private/UU_GenomeAnalysis/data/raw_data/illumina_data/SRR6058604_scaffold_06.2P.fastq.gz > /home/hychim/private/UU_GenomeAnalysis/result/genome_assembly/bwa/20220408_bwa_res.sam
+/home/hychim/private/UU_GenomeAnalysis/data/raw_data/illumina_data/SRR6058604_scaffold_11.1P.fastq.gz \
+/home/hychim/private/UU_GenomeAnalysis/data/raw_data/illumina_data/SRR6058604_scaffold_11.2P.fastq.gz > /home/hychim/private/UU_GenomeAnalysis/result/genome_assembly/bwa/20220408_bwa_res.sam
