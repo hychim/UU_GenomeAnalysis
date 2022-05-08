@@ -1,0 +1,69 @@
+EggNOG data 5.0 available at /sw/data/uppnex/eggNOG/5.0
+[1;32mFunctional annotation of hits...[0m
+0 4.291534423828125e-06 0.00 q/s (% mem usage: 14.00, % mem avail: 86.05)
+#  emapper-2.1.5-a13389c
+# emapper.py  -i /home/hychim/private/UU_GenomeAnalysis/result/genome_assembly/masker/20220408_pilon_out.fasta.masked --itype genome -o /home/hychim/private/UU_GenomeAnalysis/result/genome_assembly/eggNOG/scaffold11 --cpu 4
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/hychim/private/UU_GenomeAnalysis/result/genome_assembly/masker/20220408_pilon_out.fasta.masked --threads 4 -o /home/hychim/private/UU_GenomeAnalysis/result/genome_assembly/eggNOG/scaffold11.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /home/hychim/private/UU_GenomeAnalysis/result/genome_assembly/eggNOG/scaffold11.emapper.gff...[0m
+Parsing fasta file /domus/h1/hychim/private/UU_GenomeAnalysis/result/genome_assembly/masker/20220408_pilon_out.fasta.masked...
+Fasta file /domus/h1/hychim/private/UU_GenomeAnalysis/result/genome_assembly/masker/20220408_pilon_out.fasta.masked parsing complete.
+500 339.50675654411316 1.47 q/s (% mem usage: 21.40, % mem avail: 78.63)
+1000 339.5214626789093 2.95 q/s (% mem usage: 21.40, % mem avail: 78.63)
+1500 339.53768014907837 4.42 q/s (% mem usage: 21.40, % mem avail: 78.63)
+2000 339.55203223228455 5.89 q/s (% mem usage: 21.40, % mem avail: 78.63)
+2500 339.566766500473 7.36 q/s (% mem usage: 21.40, % mem avail: 78.63)
+3000 339.58380341529846 8.83 q/s (% mem usage: 21.40, % mem avail: 78.63)
+3500 339.59876108169556 10.31 q/s (% mem usage: 21.40, % mem avail: 78.63)
+4000 339.61193585395813 11.78 q/s (% mem usage: 21.40, % mem avail: 78.63)
+4500 339.6257393360138 13.25 q/s (% mem usage: 21.40, % mem avail: 78.63)
+5000 339.63916182518005 14.72 q/s (% mem usage: 21.40, % mem avail: 78.63)
+5500 339.6521363258362 16.19 q/s (% mem usage: 21.40, % mem avail: 78.63)
+6000 339.6652388572693 17.66 q/s (% mem usage: 21.40, % mem avail: 78.63)
+6500 339.6789290904999 19.14 q/s (% mem usage: 21.40, % mem avail: 78.63)
+7000 339.69295716285706 20.61 q/s (% mem usage: 21.40, % mem avail: 78.63)
+7500 339.70580220222473 22.08 q/s (% mem usage: 21.40, % mem avail: 78.63)
+8000 339.7223527431488 23.55 q/s (% mem usage: 21.40, % mem avail: 78.63)
+8500 339.7387797832489 25.02 q/s (% mem usage: 21.40, % mem avail: 78.63)
+9000 339.75618290901184 26.49 q/s (% mem usage: 21.40, % mem avail: 78.63)
+9500 339.77231001853943 27.96 q/s (% mem usage: 21.40, % mem avail: 78.63)
+10000 339.7870500087738 29.43 q/s (% mem usage: 21.40, % mem avail: 78.63)
+10500 339.80149698257446 30.90 q/s (% mem usage: 21.40, % mem avail: 78.63)
+11000 339.81732511520386 32.37 q/s (% mem usage: 21.40, % mem avail: 78.63)
+11500 339.8312439918518 33.84 q/s (% mem usage: 21.40, % mem avail: 78.63)
+11534 340.0286777019501 33.92 q/s (% mem usage: 21.20, % mem avail: 78.77)
+[32mDone[0m
+   /home/hychim/private/UU_GenomeAnalysis/result/genome_assembly/eggNOG/scaffold11.emapper.genepred.fasta
+   /home/hychim/private/UU_GenomeAnalysis/result/genome_assembly/eggNOG/scaffold11.emapper.gff
+   /home/hychim/private/UU_GenomeAnalysis/result/genome_assembly/eggNOG/scaffold11.emapper.hits
+   /home/hychim/private/UU_GenomeAnalysis/result/genome_assembly/eggNOG/scaffold11.emapper.seed_orthologs
+   /home/hychim/private/UU_GenomeAnalysis/result/genome_assembly/eggNOG/scaffold11.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-a13389c [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 11534
+Total time: 18249 secs
+FINISHED

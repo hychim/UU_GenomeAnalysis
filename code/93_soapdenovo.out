@@ -1,0 +1,367 @@
+
+Version 2.04: released on July 13th, 2012
+Compile Nov 20 2013	12:17:30
+
+********************
+Pregraph
+********************
+
+Parameters: pregraph -s /domus/h1/hychim/private/UU_GenomeAnalysis/code/93_soapdenovo.config -K 23 -R -o /proj/genomeanalysis2022/nobackup/work/hychim/soapdenovo/ 
+
+In /domus/h1/hychim/private/UU_GenomeAnalysis/code/93_soapdenovo.config, 1 lib(s), maximum read length 100, maximum name length 256.
+
+8 thread(s) initialized.
+Import reads from file:
+ /home/hychim/private/UU_GenomeAnalysis/data/raw_data/illumina_data/SRR6058604_scaffold_11.1P.fastq.gz
+Import reads from file:
+ /home/hychim/private/UU_GenomeAnalysis/data/raw_data/illumina_data/SRR6058604_scaffold_11.2P.fastq.gz
+Time spent on hashing reads: 170s, 8901184 read(s) processed.
+LIB(s) information:
+ [LIB] 0, avg_ins 200, reverse 0.
+78349484 node(s) allocated, 689173265 kmer(s) in reads, 689173265 kmer(s) processed.
+done hashing nodes
+74750009 linear node(s) marked.
+Time spent on marking linear nodes: 3s.
+Time spent on pre-graph construction: 173s.
+
+Start to remove frequency-one-kmer tips shorter than 46.
+Total 542409 tip(s) removed.
+8 thread(s) initialized.
+274303 linear node(s) marked.
+Start to remove tips with minority links.
+62178 tip(s) removed in cycle 1.
+98 tip(s) removed in cycle 2.
+0 tip(s) removed in cycle 3.
+Total 62276 tip(s) removed.
+8 thread(s) initialized.
+0 linear node(s) marked.
+Time spent on removing tips: 40s.
+
+8414967 (4207713) edge(s) and 999982 extra node(s) constructed.
+Time spent on constructing edges: 91s.
+
+In file: /domus/h1/hychim/private/UU_GenomeAnalysis/code/93_soapdenovo.config, max seq len 100, max name len 256.
+8 thread(s) initialized.
+Import reads from file:
+ /home/hychim/private/UU_GenomeAnalysis/data/raw_data/illumina_data/SRR6058604_scaffold_11.1P.fastq.gz
+Import reads from file:
+ /home/hychim/private/UU_GenomeAnalysis/data/raw_data/illumina_data/SRR6058604_scaffold_11.2P.fastq.gz
+8901184 read(s) processed.
+Time spent on:
+ importing reads: 13s,
+ chopping reads to kmers: 26s,
+ searching kmers: 90s,
+ aligning reads to edges: 27s,
+ searching (K+1)mers: 12s,
+ adding pre-arcs: 13s,
+ recording read paths: 6s.
+171708276 marker(s) output.
+Reads alignment done, 55298 read(s) deleted, 8533604 pre-arc(s) added.
+LIB(s) information:
+ [LIB] 0, avg_ins 200, reverse 0.
+Time spent on aligning reads: 223s.
+
+2817068 vertex(es) output.
+Overall time spent on constructing pre-graph: 8m.
+
+
+********************
+Contig
+********************
+
+Parameters: contig -g /proj/genomeanalysis2022/nobackup/work/hychim/soapdenovo/ -M 1 -R -s /domus/h1/hychim/private/UU_GenomeAnalysis/code/93_soapdenovo.config 
+
+There are 2817068 kmer(s) in vertex file.
+There are 8414967 edge(s) in edge file.
+Kmers sorted.
+8414967 edge(s) input.
+10855272 pre-arcs loaded.
+123081888 markers overall.
+123081888 markers loaded.
+2100777 none-palindrome edge(s) swapped, 0 palindrome edge(s) processed.
+8414967 edge(s) sorted.
+Arcs sorted.
+217285 repeat(s) are solvable, 434992 more edge(s).
+869984 dead arc(s) removed.
+Time spent on solving repeat: 2s.
+Start to pinch bubbles, cutoff 0.100000, MAX NODE NUM 3, MAX DIFF NUM 2.
+.............100000 bubbles merged.
+166761 start points, 7971647 dheap nodes.
+2123706 pair(s) found, 123272 pair of path(s) compared, 102403 pair(s) merged.
+Sequence comparison failed:
+ Path crossing deleted edge                         0
+ Length difference of two paths greater than two    3262
+ Mismatch score greater than cutoff (2)             9975
+ Mismatch score ratio greater than cutoff (0.1)     0
+ Path length shorter than (Kmer-1)                  7632
+DFibHeap: 431312 node(s) allocated.
+1317720 edge(s) concatenated in cycle 1.
+77517 edge(s) concatenated in cycle 2.
+351 edge(s) concatenated in cycle 3.
+1 edge(s) concatenated in cycle 4.
+0 edge(s) concatenated in cycle 5.
+Time spent on pinching bubbles: 29s.
+Start to destroy weak inner edges.
+276598 weak inner edge(s) destroyed in cycle 1.
+5258 weak inner edge(s) destroyed in cycle 2.
+81 weak inner edge(s) destroyed in cycle 3.
+4 weak inner edge(s) destroyed in cycle 4.
+0 weak inner edge(s) destroyed in cycle 5.
+550149 dead arc(s) removed.
+64118 inner edge(s) with coverage lower than or equal to 1 destroyed.
+140823 dead arc(s) removed.
+390485 edge(s) concatenated in cycle 1.
+4904 edge(s) concatenated in cycle 2.
+10 edge(s) concatenated in cycle 3.
+0 edge(s) concatenated in cycle 4.
+Before compacting, 8849959 edge(s) existed.
+After compacting, 4367647 edge(s) left.
+
+Strict: 0, cutoff length: 46.
+153494 tips cut in cycle 1.
+10606 tips cut in cycle 2.
+1624 tips cut in cycle 3.
+325 tips cut in cycle 4.
+83 tips cut in cycle 5.
+25 tips cut in cycle 6.
+9 tips cut in cycle 7.
+10 tips cut in cycle 8.
+7 tips cut in cycle 9.
+7 tips cut in cycle 10.
+3 tips cut in cycle 11.
+1 tips cut in cycle 12.
+3 tips cut in cycle 13.
+1 tips cut in cycle 14.
+0 tips cut in cycle 15.
+144593 dead arc(s) removed.
+94339 edge(s) concatenated in cycle 1.
+211 edge(s) concatenated in cycle 2.
+0 edge(s) concatenated in cycle 3.
+Before compacting, 4367647 edge(s) existed.
+After compacting, 3846151 edge(s) left.
+
+There are 265508 contig(s) longer than 100, sum up 46118914 bp, with average length 173.
+The longest length is 8147 bp, contig N50 is 173 bp,contig N90 is 100 bp.
+1923282 contig(s) longer than 24 output.
+
+Time spent on constructing contig: 1m.
+
+
+********************
+Map
+********************
+
+Parameters: map -s /domus/h1/hychim/private/UU_GenomeAnalysis/code/93_soapdenovo.config -g /proj/genomeanalysis2022/nobackup/work/hychim/soapdenovo/ -K 23 
+
+Kmer size: 23.
+Contig length cutoff: 25.
+
+1923282 contig(s), maximum sequence length 8147, minimum sequence length 24, maximum name length 10.
+Time spent on parsing contigs file: 1s.
+8 thread(s) initialized.
+Time spent on hashing contigs: 22s.
+60423653 node(s) allocated, 63501724 kmer(s) in contigs, 63501724 kmer(s) processed.
+Time spent on graph construction: 23s.
+
+Time spent on aligning long reads: 0s.
+
+In file: /domus/h1/hychim/private/UU_GenomeAnalysis/code/93_soapdenovo.config, max seq len 100, max name len 256
+8 thread(s) initialized.
+3846151 edge(s) in the graph.
+Import reads from file:
+ /home/hychim/private/UU_GenomeAnalysis/data/raw_data/illumina_data/SRR6058604_scaffold_11.1P.fastq.gz
+Import reads from file:
+ /home/hychim/private/UU_GenomeAnalysis/data/raw_data/illumina_data/SRR6058604_scaffold_11.2P.fastq.gz
+Current insert size is 200, map_len is 32.
+
+Total reads         8901184
+Reads in gaps       4505496
+Ratio               50.6%
+Reads on contigs    7400595
+Ratio               83.1%
+1 pe insert size, the largest boundary is 8901184.
+
+LIB(s) information:
+ [LIB] 0, avg_ins 200, reverse 0.
+Time spent on aligning reads: 210s.
+
+Overall time spent on alignment: 3m.
+
+
+********************
+Scaff
+********************
+
+Parameters: scaff -g /proj/genomeanalysis2022/nobackup/work/hychim/soapdenovo/ 
+
+Files for scaffold construction are OK.
+
+There are 1 grad(s), 8901184 read(s), max read len 100.
+Kmer size: 23
+There are 3846151 edge(s) in edge file.
+Mask contigs with coverage lower than 0.9 or higher than 18.0, and strict length 100.
+Average contig coverage is 9, 1777151 contig(s) masked.
+Mask contigs shorter than 25, 1042614 contig(s) masked.
+4912236 arc(s) loaded, average weight is 5.
+1923282 contig(s) loaded.
+Done loading updated edges.
+Time spent on loading updated edges: 9s.
+
+*****************************************************
+Start to load paired-end reads information.
+
+For insert size: 200
+ Total PE links                      3395924
+ Normal PE links on same contig      1007857
+ Incorrect oriented PE links         57
+ PE links of too small insert size   701286
+ PE links of too large insert size   0
+ Correct PE links                    1686665
+ Accumulated connections             1689272
+Use contigs longer than 200 to estimate insert size: 
+ PE links               913520
+ Average insert size    264
+ SD                     69
+844636 new connections.
+
+All paired-end reads information loaded.
+Time spent on loading paired-end reads information: 6s.
+
+*****************************************************
+Start to construct scaffolds.
+
+***************************
+For insert size: 200
+ Total PE links                844635
+ PE links to masked contigs    475605
+ On same scaffold PE links     0
+Cutoff of PE links to make a reliable connection: 3
+ Active connections    738060
+ Weak connections      596816
+ Weak ratio            80.9%
+1 circles removed.
+Start to remove transitive connection.
+Total contigs                         3846151
+Masked contigs                        2819769
+Remained contigs                      1026382
+None-outgoing-connection contigs      896433 (87.339119%)
+Single-outgoing-connection contigs    119241
+Multi-outgoing-connection contigs     590
+Cycle 1
+ Two-outgoing-connection contigs     10118
+ Potential transitive connections    1039
+ Transitive connections              816
+ Transitive ratio                    8.1%
+Cycle 2
+ Two-outgoing-connection contigs     9274
+ Potential transitive connections    223
+ Transitive connections              0
+ Transitive ratio                    0.0%
+Start to linearize sub-graph.
+ Picked sub-graphs          9009
+ Connection-conflict        0
+ Significant overlapping    5325
+ Eligible                   1
+ Bubble structures          25
+Mask repeats:
+ Puzzles           4612
+ Masked contigs    4523
+Start to remove transitive connection.
+Total contigs                         3846151
+Masked contigs                        2828865
+Remained contigs                      1017286
+None-outgoing-connection contigs      898586 (88.331696%)
+Single-outgoing-connection contigs    118630
+Multi-outgoing-connection contigs     0
+Cycle 1
+ Two-outgoing-connection contigs     70
+ Potential transitive connections    29
+ Transitive connections              19
+ Transitive ratio                    27.1%
+Cycle 2
+ Two-outgoing-connection contigs     51
+ Potential transitive connections    10
+ Transitive connections              0
+ Transitive ratio                    0.0%
+Start to linearize sub-graph.
+ Picked sub-graphs          50
+ Connection-conflict        0
+ Significant overlapping    43
+ Eligible                   0
+ Bubble structures          0
+Non-strict linearization.
+Start to linearize sub-graph.
+ Picked sub-graphs          38
+ Connection-conflict        0
+ Significant overlapping    15
+ Eligible                   0
+ Bubble structures          0
+Start to mask puzzles.
+ Masked contigs      12
+ Remained puzzles    0
+Freezing done.
+
+Recover contigs.
+ Total recovered contigs    61
+ Single-route cases         61
+ Multi-route cases          0
+
+All links loaded.
+Time spent on constructing scaffolds: 2s.
+
+The final rank
+
+*******************************
+ Scaffold number                  34122
+ In-scaffold contig number        265498
+ Total scaffold length            16509746
+ Average scaffold length          483
+ Filled gap number                7694
+ Longest scaffold                 14182
+ Scaffold and singleton number    238996
+ Scaffold and singleton length    43119339
+ Average length                   180
+ N50                              233
+ N90                              77
+ Weak points                      0
+
+*******************************
+1000 scaffolds processed.
+2000 scaffolds processed.
+3000 scaffolds processed.
+4000 scaffolds processed.
+5000 scaffolds processed.
+6000 scaffolds processed.
+7000 scaffolds processed.
+8000 scaffolds processed.
+9000 scaffolds processed.
+10000 scaffolds processed.
+11000 scaffolds processed.
+12000 scaffolds processed.
+13000 scaffolds processed.
+14000 scaffolds processed.
+15000 scaffolds processed.
+16000 scaffolds processed.
+17000 scaffolds processed.
+18000 scaffolds processed.
+19000 scaffolds processed.
+20000 scaffolds processed.
+21000 scaffolds processed.
+22000 scaffolds processed.
+23000 scaffolds processed.
+24000 scaffolds processed.
+25000 scaffolds processed.
+26000 scaffolds processed.
+27000 scaffolds processed.
+28000 scaffolds processed.
+29000 scaffolds processed.
+30000 scaffolds processed.
+31000 scaffolds processed.
+32000 scaffolds processed.
+33000 scaffolds processed.
+34000 scaffolds processed.
+
+Done with 34122 scaffolds, 0 gaps finished, 48964 gaps overall.
+
+Overall time spent on constructing scaffolds: 50m.
+Time for the whole pipeline: 64m.
